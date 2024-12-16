@@ -16,4 +16,4 @@ Above the MVP, I would like it to give suggestions to improve based on nights wh
 I would like to-dos to have an excertion rating so that the app could suggest when sleep debt might be too high and the user may experience trouble accomplishing the large tasks ahead.
 
 ## Tools
-I plan to write this using Python, Flask, and sqlite3 and sqlalchemy. I may look into Flutter as well.
+I plan to write this using Python, Flask, and sqlite3 and mySQL. I may look into Flutter as well.
