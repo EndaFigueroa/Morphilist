@@ -4,3 +4,4 @@ def get_small(list):
     return answer
 
 get_small(list)
+print(get_small(list))
