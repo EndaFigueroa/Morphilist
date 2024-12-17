@@ -17,3 +17,8 @@ I would like to-dos to have an excertion rating so that the app could suggest wh
 
 ## Tools
 I plan to write this using Python, Flask, and sqlite3 and mySQL. I may look into Flutter as well.
+
+## Links
+[Stand-Up](https://docs.google.com/document/d/1x-zbcrR6IL9pS7u6RZtvI1RNrZY-As96WXdSK2ORCHg/edit?usp=sharing)
+
+[Fake Test Data](https://docs.google.com/spreadsheets/d/1QfSnc2srUkij7L7t3uSgdikTEkzuDEVILG3-cvnEDVc/edit?usp=sharing)
