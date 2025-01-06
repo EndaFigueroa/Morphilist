@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% block head %}{% endblock %}
+{% block body%}
+<body class="day_view">
+<!-- loading complete stars -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Begin Bootstrap -->
+<div class = "container-fluid SMN_effect-97">
+	<div class="row justify-content-md-center">
+        <!-- Navi Start -->
+        <div class="col fixed-top">
+            {% include 'nav.html' %}
+        </div>
+<!-- Left side menue -->
+        <div class="row">
+            <div class="col-md-4 fixed-top">
+                <div class="row">
+                <!-- Sidebar Begin -->
+                    <div class="side_bar">
+                        <div class="row">
+                            <p class="logo">Morphilist</p>
+                        </div>
+                        <div class="row">
+                        <!-- Date = todo date -->
+                            <div class="view_date">December 25th, 2024</div>
+                        </div>
+                        <div class="row">
+                            <div class="sort_by_sty">
+                                <label class="mr-sm-2" for="sort_by_day_view"></label>Sort By:</label>
+                                <select class="custom-select mr-sm-2" id="sort_by_day_view">
+                                    <option selected>Priority</option>
+                                    <option value="1">Excertion</option>
+                                    <option value="2">Completed</option>
+                                    <option value="3">Incomplete</option>
+                                    <option value="4">Time</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Create New Section -->
+                <div class="row">
+                    <div class="new_day_link">
+                        <a href="{{ url_for('routes.new_task') }}">Create New Task</a>
+                    </div>
+                </div>
+                <!-- Begin Caffeine -->
+                <div class="row">
+                    <div class="side_bar_caf">
+                        Today's Caffeine Amount:<br> 
+                        100mg<br>
+                        Edit Amount
+                    </div>
+                </div>
+            </div>
+<!-- Begin To Do Area -->
+            <div class="col-md-8">
+            <!-- For Each will go here -->
+                <div class="row">  
+                    <table class="todo">
+                            <!-- Task Title -->
+                            <tr><th class="task_title" colspan="2">Clean Fridge</th></tr>
+
+                            <!-- Task Time -->
+                            <tr><td colspan="2">
+                            <!-- If All Day here -->
+                        
+                            Time: 12:00am
+                            <!-- If All Day ends -->
+                            
+                            </tr>
+
+                            <!-- Task Priority -->
+                            <!-- If Pri Starts -->
+                            <tr>
+                                
+                                    <td class="high_pri">Priority: High</td> 
+                            <!-- If Pri ends -->
+                            
+                                <!-- If Excer Starts -->
+                                <!-- Excertion Level -->
+                                    <td class="high_excer">Excertion Level: 9/10</td>
+                            </tr>
+                                <!-- If Excer ends -->
+                                
+                            <!-- Task Description -->
+                            <tr><td colspan="2">"Oh no..."</td></tr>
+                            
+                            <!-- Complete Status -->
+                            <tr><td>
+                            <!-- If Complete here -->
+                            
+                                
+                                <!-- Add button to change status to True -->
+                                Mark Complete
+                            
+                            <!-- If Complete ends -->
+                            </td>
+
+                                <!-- Edit Task -->
+                                <td style="text-align: right;"><a href="{{ url_for('routes.edit_task') }}">Edit Task</a></td></tr>
+                        </table>
+                    </div>
+                    
+                <!-- For Each will end here -->
+                    
+                    <div class="row">
+                        <table class="todo">
+                            <tr><th class="task_title" colspan="2">Clean Garage</th></tr>
+                            <tr><td colspan="2">Time: 12:00am</tr>
+                            <tr><td class="low_pri">Priority: Low</td>
+                                <td class="high_excer">Excertion Level: 10/10</td></tr>
+                            <tr><td colspan="2">Description: Throw it all out! I can't believe Ive let it go this long, the animals inside are getting hungrier every day</td></tr>
+                            <tr><td>Mark Complete</td>
+                                <td style="text-align:right">Edit Task</td></tr>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <table class="todo">
+                            <tr><th class="task_title" colspan="2">Clean Bathroom</th></tr>
+                            <tr><td colspan="2">All Day</tr>
+                            <tr><td class="mid_pri">Priority: Mid</td>
+                                <td class="mid_excer">Excertion Level: 5/10</td></tr>
+                            <tr><td colspan="2">Description: It will never be white again...</td>
+                            <tr><td>Mark Complete</td>
+                                <td style="text-align:right">Edit Task</td></tr>
+                        </table>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <!-- If todo is empty -->
+            <!-- <div class="todo">
+                No tasks for today! Please add one!
+            </div> -->
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}

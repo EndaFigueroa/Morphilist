@@ -1,0 +1,285 @@
+/**** FONTS ****/
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+/* Logo Font */
+.courgette-regular {
+    font-family: "Courgette", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Important Font */
+.berkshire-swash-regular {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/* Everything Else */
+.playwrite-de-grund- {
+    font-family: "Playwrite DE Grund", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+/********** Base **********/
+.logo{
+    font-family: "Courgette", serif;
+    font-size:2em;
+    text-align: center;
+    
+    margin:auto;
+}
+.navi_day{
+    margin-left:40%;
+    width:53.5%;
+    background-color:bisque;
+    height:50px;
+    padding:5px 0px 5px 0px;
+    border: solid white 3px;
+    border-inline: white solid 3px;
+}
+
+.navtab{
+    text-align:center;
+    margin-left:23%;
+}
+
+
+
+/**** Body, Links ****/
+/* body{
+    font-size:.8em;
+    font-family: "Playwrite DE Grund", serif;
+} */
+
+/* Text Effects */
+a:visited {
+    font-family: "Berkshire Swash", serif;
+    text-decoration: none;
+    text-shadow: 1px 1px #373737;
+}
+a:active {
+    font-family: "Berkshire Swash", serif;
+    text-decoration: none;
+    text-shadow: 1px 1px #373737;
+}
+
+.SMN_effect-97 a {
+    font-family: "Berkshire Swash", serif;
+	transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color:#fa759d;
+    text-shadow: 1px 1px #373737;
+}
+
+.SMN_effect-97 a:hover {
+    font-family: "Berkshire Swash", serif;
+	animation: Magic 10s ease infinite;
+    text-decoration: none;
+}
+
+@keyframes Magic {
+	0% {color: #e74c3c;}
+	20% {color: #e67e22;}
+	40% {color: #f1c40f;}
+	60% {color: #27ae60;}
+	80% {color: #3498db;}
+	100% {color: #8e44ad;}
+}
+
+/**** Side Bar ****/
+.side_bar{
+    width:80%;
+    height:auto; 
+    margin-left: 15%;
+    margin-top: 10%;
+    background-color: white;
+    border: solid white 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    text-align: center;
+}
+
+.side_bar_caf{
+    width:80%;
+    height:auto; 
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: white;
+    border: solid white 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    text-align: center;
+}
+
+.view_date{
+    width:96%;
+    font-size: 2.5vw;
+    font-family: "Berkshire Swash";
+    text-align: center;
+    text-shadow: 0 2px white;
+    margin:auto;
+    background-color:#fab2c8;
+    border: solid white 3px;
+    border-inline: white solid 3px;
+    border-radius:10px;
+}
+
+.user_link,.prev_link{
+    text-align: left;
+    margin-left:5%;
+    width:45%;
+    padding:2% 2% 2% 3%;
+    background-color:#fa759d;
+}
+.home_link,.next_link{
+    text-align: right;
+    margin-right:5%;
+    padding:2% 3% 2% 2%;
+    width:45%;
+    background-color:#fa759d;
+}
+
+.night_link {
+    text-align: center;
+}
+
+.new_day_link{
+    text-align: center;
+    width:80%;
+    height:50%; 
+    margin: 5% 0 0 15%;
+    text-shadow: 1px 1px #373737;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sort_by_sty{
+    padding-top:10px;
+    text-align: center;
+}
+
+
+/******* INDEX ********/
+body.home_bg{
+    background:black;
+}
+
+/******* DAY VIEW *******/
+.todo{
+    width:80%;
+    height:auto;
+    margin:8% 0% 0% 60%;
+    color: black;
+    background-color: white;
+    border: solid white 8px;
+    border-inline: white solid 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.task_title{
+    font-family: "times new roman";
+    font-size: 30px;
+    font-family: "Berkshire Swash", serif;
+    text-align: center;
+    color:#3c1842;
+    width:80%;
+    background-color:#fa759d;
+}
+th{
+    text-align: center;
+}
+
+body.day_view{
+    background-image: url(./images/day_view_bg2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* Priority Styles */
+.high_pri{
+    background-image:linear-gradient(to left, rgba(255,0,0,0), rgb(228, 145, 171));
+    width:50%;
+}
+.mid_pri{
+    background-image:linear-gradient(to left, rgba(255,0,0,0), rgb(208, 141, 205));
+    width:50%;
+}
+.low_pri{
+    background-image:linear-gradient(to left, rgba(255,0,0,0), rgb(251, 214, 184));
+    width:50%;
+}
+/* Excertion Styles */
+.high_excer{
+    background-image:linear-gradient(to right, rgba(255,0,0,0), rgb(228, 145, 171));
+    text-align:right;
+    width:50%;
+}
+.mid_excer{
+    background-image:linear-gradient(to right, rgba(255,0,0,0), rgb(208, 141, 205));
+    text-align:right;
+    width:50%;
+}
+.low_excer{
+    background-image:linear-gradient(to right, rgba(255,0,0,0), rgb(251, 214, 184));
+    text-align:right;
+    width:50%;
+}
+
+/****** New Task ******/
+.new_task_form_home {
+    width:50%;
+    background-color: white;
+    margin:auto;
+    margin-top:10%;
+    border: solid white 8px;
+    border-inline: white solid 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+table.new_task {
+    width:100%;
+    margin:auto;
+}
+.desc_style {
+    margin:auto;
+    padding:10px;
+}
+
+/******* HOME PAGE *******/
+.rainbow {
+    position: relative;
+    border-radius: var(--border-radius);
+    padding: 4px;
+}
+.rainbow .inner {
+    border-radius: 4px;
+    background:black;
+}
+.rainbow::before,
+.rainbow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(45deg,#ff595e,#ffca3a,#8ac926,#1982c4,#6a4c93,#ff6700);
+    background-size: 400%;
+    z-index: -1;
+    animation: glow 20s linear infinite;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.rainbow::after {
+    filter: blur(25px);
+    transform: translate3d(0, 0, 0); /* For Safari */
+}
+
+@keyframes glow {
+    0% {background-position: 0 0;}
+    50% {background-position: 100% 0;}
+    100% {background-position: 0 0;}
+}
+

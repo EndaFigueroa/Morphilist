@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block head%}{% endblock %}
+{%block body%}
+<body class="home_bg">
+<div class="rainbow">
+    <div class="inner">    
+        view <a href="{{ url_for('routes.day_view') }}">Day</a><br>
+        view <a href="{{ url_for('routes.night_view') }}">Night</a>
+    </div>
+</div>
+</body>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block head %}
+<body class="day_view">
+<div class = "container-fluid SMN_effect-97">
+	<div class="row justify-content-md-center">
+        <div class="col fixed-top">
+            <div class="new_task_form_home">
+                <form>
+                    <table class="new_task">
+                        <tr><th class="task_title" colspan="2">Add a New Task</th></tr>
+                        <!-- Task Name -->
+                        <tr><td colspan="2"><label for="task_name">Task Name:</label>
+                                <input type="text" id="task_name" name="task_name" maxlength="20"></td></tr>
+                        <!-- Task Date -->
+                        <tr><td colspan="2"><label for"task_date">Date:</label>
+                                <input type="date" id="task_date" name="task_date"></td></tr>
+                        <!-- Task Time and All Day -->
+                        <tr><td><label for="task_time">Time:</label>
+                                <input type="time" id="task_time" name="task_time"></td>
+                            <td><input type="checkbox" id="all_day" name="all_day">
+                                <label for="all_day">All Day</label></td></tr>
+                        <!-- Priority and Excertion -->
+                        <tr><td><label for="task_pri">Priority:</label>
+                                <select id="task_pri" name="task_pri">
+                                    <option value="high_pri">High</option>
+                                    <option value="mid_pri">Middle</option>
+                                    <option value="low_pri">Low</option>
+                                </select>
+                            </td>
+                            <td><label for="exert_lvl">Excertion Level out of 10:</label>
+                                <input type="number" id="exert_lvl" name="exert_lvl" min="1" max="10"></td></tr>
+                        <!-- Task Description     -->
+                        <tr><td colspan="2"><label for="task_desc">Task Description:</label><br>
+                            <textarea name="task_desc" rows="5" cols="30" maxlength="200"></textarea></td></tr>
+                        <tr><td colspan="2"><input type="submit"></td></tr>
+                        </tabel>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
